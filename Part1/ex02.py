@@ -1,0 +1,2 @@
+text = "Pineapple"
+print(text)
