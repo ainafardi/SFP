@@ -35,3 +35,12 @@ def main():
 if __name__ == "__main__":
     main()
 
+with st.sidebar:
+    st.title("Sidebar") 
+    #anything added inside this indented section will pop up in the sidebar#
+        
+st.radio("Radio-button select", ["Friendly", "Formal", "Funny"], index=0)
+st.multiselect("Multi-select", ["Movies", "Travel", "Food", "Sports"], default=["Food"])
+st.selectbox("Dropdown select", ["Data", "Code", "Travel", "Food", "Sports"], index=0)
+st.slider("Slider", min_value=1, max_value=200, value=60)
+st.select_slider("Option Slider", options=["Very Sad", "Sad", "Okay", "Happy", "Very Happy"], value="Okay")
