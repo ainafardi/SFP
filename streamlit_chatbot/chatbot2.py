@@ -5,7 +5,7 @@ user_emoji = "🦈"  # Change this to any emoji you like
 robot_img = "robot.jpg"  # Your robot image file path
 
 # Configure Gemini API
-GOOGLE_API_KEY = "AIzaSyBRNHjIqWDnXi5mJGAF4hleAYXd2ADq_4o"
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=GOOGLE_API_KEY)
 model = genai.GenerativeModel('gemini-2.5-flash')
 
@@ -20,7 +20,7 @@ def get_gemini_response(prompt, persona_instructions=""):
     return response.text
 
 def main():
-    st.title("music recommendations bot🎧")
+    st.title("Music Recommendations Bot🎧")
     initialize_session_state()
 
     # Define persona_instructions at the beginning
