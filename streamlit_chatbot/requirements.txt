@@ -1,0 +1,3 @@
+google-generativeai #if using GEMINI API
+streamlit #most often required
+pandas #if dealing with data
