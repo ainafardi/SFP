@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 user_emoji = "🦈"  # Change this to any emoji you like
-robot_img = "robot.jpg"  # Your robot image file path
+robot_img = "streamlit_chatbot/robot.jpg"  # Your robot image file path
 
 # Configure Gemini API
 GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
